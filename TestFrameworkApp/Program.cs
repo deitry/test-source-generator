@@ -1,4 +1,8 @@
-﻿using Rpc;
+﻿// using Rpc;
+
+using System;
+using System.Text;
+using Rpc;
 
 namespace TestFrameworkApp
 {
@@ -7,26 +11,22 @@ namespace TestFrameworkApp
     {
         public static void Main(string[] args)
         {
+            HelloWorldGenerated.HelloWorld.SayHello(); // calls Console.WriteLine("Hello World!") and then prints out syntax trees
+            var my = new MyClass();
+            var result = my.RpcRequest_abc(Encoding.UTF8.GetBytes("da"));
 
+            Console.WriteLine(result);
         }
     }
 
 
-    class MyClass
-    {
-        [RpcRequest]
-        int a(string s)
-        {
-            return 0;
-        }
-    }
 }
 
-namespace Rpc
+public partial class MyClass
 {
-    [System.AttributeUsage(System.AttributeTargets.Method)]
-    public sealed class RpcRequestAttribute : System.Attribute
+    [RpcRequest]
+    public int abc(string s)
     {
-        public RpcRequestAttribute () {}
+        return 5;
     }
 }

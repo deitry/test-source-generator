@@ -30,7 +30,7 @@ namespace MyGenerator
                 {
                     foreach (var attribute in attributeList.Attributes)
                     {
-                        if (attribute.Name.ToString() == Class1.AttribName)
+                        if (attribute.Name.ToString() == RpcRequestGenerator.AttribName)
                         {
                             if (mds.ParameterList.Parameters.Count > 1)
                             {
