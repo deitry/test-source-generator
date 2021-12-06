@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestSourceGenerator", "TestSourceGenerator\TestSourceGenerator.csproj", "{CF81D2E6-E420-4E39-B11F-2A433D400903}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyGenerator", "MyGenerator\MyGenerator.csproj", "{ADE98B62-54CB-4C0F-997F-D1077CBE6BD7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestFrameworkApp", "TestFrameworkApp\TestFrameworkApp.csproj", "{B978B73D-9401-4A5A-9ADE-C7C418766302}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CF81D2E6-E420-4E39-B11F-2A433D400903}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF81D2E6-E420-4E39-B11F-2A433D400903}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF81D2E6-E420-4E39-B11F-2A433D400903}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF81D2E6-E420-4E39-B11F-2A433D400903}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ADE98B62-54CB-4C0F-997F-D1077CBE6BD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADE98B62-54CB-4C0F-997F-D1077CBE6BD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADE98B62-54CB-4C0F-997F-D1077CBE6BD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADE98B62-54CB-4C0F-997F-D1077CBE6BD7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B978B73D-9401-4A5A-9ADE-C7C418766302}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B978B73D-9401-4A5A-9ADE-C7C418766302}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B978B73D-9401-4A5A-9ADE-C7C418766302}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B978B73D-9401-4A5A-9ADE-C7C418766302}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

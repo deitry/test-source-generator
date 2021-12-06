@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+<!--        <TargetFramework>net5.0</TargetFramework>-->
+<!--        <TargetFramework>netstandard2.0</TargetFramework>-->
+        <TargetFrameworks>net4.8;net5.0</TargetFrameworks>
+        <Nullable>enable</Nullable>
+        <LangVersion>10</LangVersion>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <AdditionalFiles Include="AnalyzerReleases.Shipped.md" />
+        <AdditionalFiles Include="AnalyzerReleases.Unshipped.md" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.CodeAnalysis" Version="4.0.1" />
+      <PackageReference Include="Microsoft.CodeAnalysis.Analyzers" Version="3.3.3">
+        <PrivateAssets>all</PrivateAssets>
+        <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      </PackageReference>
+      <PackageReference Include="Microsoft.CodeAnalysis.Common" Version="4.0.1" />
+      <PackageReference Include="Microsoft.CodeAnalysis.Compilers" Version="4.0.1" />
+      <PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="4.0.1" />
+      <PackageReference Include="Microsoft.Net.Compilers" Version="4.0.1">
+        <PrivateAssets>all</PrivateAssets>
+        <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      </PackageReference>
+    </ItemGroup>
+
+</Project>
